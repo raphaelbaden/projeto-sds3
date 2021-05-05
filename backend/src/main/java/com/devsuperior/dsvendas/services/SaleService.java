@@ -21,6 +21,7 @@ public class SaleService {
 	@Autowired //indica que a instância vai ser injeta automaticamente pelo framework, não precisando fazer: - new SellerRepository
 	private SaleRepository repository;
 	
+	@Autowired 
 	private SellerRepository sellerRepository;
 	
 	@Transactional(readOnly = true) //indica que será apenas de leitura, para não locar a tabela do banco
